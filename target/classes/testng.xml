@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test runs." parallel="false" thread-count="1">
+	<test name="Regression One">
+		<parameter name="pageTitle" value="Facebook – log in or sign up"></parameter>
+		<classes>
+			<class name="application.tests.LoginPageTests"></class>
+			<class name="application.apitests.GetAPITests"></class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,8 @@
+application\pages\CheckoutPage.class
+application\apis\RestClient.class
+application\pages\HomePage.class
+application\utility\TestUtil.class
+application\pages\BasePage.class
+application\pages\PaymentPage.class
+application\pages\LoginPage.class
+application\utility\ScreenShot.class

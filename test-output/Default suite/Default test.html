@@ -1,0 +1,934 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jan 06 18:54:38 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>367 seconds (367111 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='application.tests.LoginPageTests.googleAllyTest()'><b>googleAllyTest</b><br>Test class: application.tests.LoginPageTests</td>
+<td><div><pre>java.lang.AssertionError: Found 10 accessibility violations:
+1) ARIA role must be appropriate for the element: https://dequeuniversity.com/rules/axe/3.1/aria-allowed-role?application=axeAPI
+  a) [&quot;iframe[title=\&quot;reCAPTCHA\&quot;]&quot;]
+    Fix any of the following:
+      role presentation  is not allowed for given element
+
+
+  b) [&quot;.ot-host-expand&quot;]
+    Fix any of the following:
+      role presentation  is not allowed for given element
+
+
+  c) [&quot;iframe[title=\&quot;reCAPTCHA\&quot;]&quot;,&quot;#recaptcha-anchor-label&quot;]
+    Fix any of the following:
+      role presentation  is not allowed for given element
+
+
+2) Elements must have sufficient color contrast: https://dequeuniversity.com/rules/axe/3.1/color-contrast?application=axeAPI
+  a) [&quot;.enter-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  b) [&quot;.enter-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(2) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  c) [&quot;.enter-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(3) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  d) [&quot;.col-md-9 &gt; h4&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.69 (foreground color: #ffffff, background color: #00adc6, font size: 16.5pt, font weight: bold). Expected contrast ratio of 3:1
+
+
+  e) [&quot;#scollJack01 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  f) [&quot;#scollJack01 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(2) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  g) [&quot;#scollJack01 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(3) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  h) [&quot;#scollJack02 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  i) [&quot;#scollJack02 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(2) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  j) [&quot;#scollJack02 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(3) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  k) [&quot;#scollJack03 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  l) [&quot;#scollJack03 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(2) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  m) [&quot;#scollJack03 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(3) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  n) [&quot;#scollJack04 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  o) [&quot;#scollJack04 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(2) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  p) [&quot;#scollJack04 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(3) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  q) [&quot;a[title=\&quot;Banking\\ \\&amp;\\ Financial\\ Services\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.14 (foreground color: #ffffff, background color: #6bbfbc, font size: 15.0pt, font weight: bold). Expected contrast ratio of 3:1
+
+
+  r) [&quot;a[title=\&quot;Insurance\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 1.98 (foreground color: #ffffff, background color: #7ac5c3, font size: 15.0pt, font weight: bold). Expected contrast ratio of 3:1
+
+
+  s) [&quot;a[title=\&quot;Healthcare\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.69 (foreground color: #ffffff, background color: #00adc6, font size: 15.0pt, font weight: bold). Expected contrast ratio of 3:1
+
+
+  t) [&quot;a[title=\&quot;Industrial\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 1.9 (foreground color: #ffffff, background color: #f5ae45, font size: 15.0pt, font weight: bold). Expected contrast ratio of 3:1
+
+
+  u) [&quot;a[title=\&quot;Software\\ \\&amp;Hi-Tech\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.4 (foreground color: #ffffff, background color: #ff8372, font size: 15.0pt, font weight: bold). Expected contrast ratio of 3:1
+
+
+  v) [&quot;a[title=\&quot;Telecom\\ \\&amp;Media\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 1.84 (foreground color: #ffffff, background color: #9ecc7a, font size: 15.0pt, font weight: bold). Expected contrast ratio of 3:1
+
+
+  w) [&quot;#homepage-brand-video&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.82 (foreground color: #ffffff, background color: #ff6d00, font size: 11.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  x) [&quot;#menu-item-15321 &gt; a&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.1 (foreground color: #a7a5a9, background color: #eeeeee, font size: 11.3pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  y) [&quot;#menu-item-15320 &gt; a&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.1 (foreground color: #a7a5a9, background color: #eeeeee, font size: 11.3pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  z) [&quot;a[href$=\&quot;sitemap/\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.32 (foreground color: #9e9da0, background color: #eeeeee, font size: 10.5pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  aa) [&quot;#menu-item-9636 &gt; a[href$=\&quot;privacy-notice/\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.32 (foreground color: #9e9da0, background color: #eeeeee, font size: 10.5pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  ab) [&quot;#menu-item-14049 &gt; a[href$=\&quot;cookie-policy/\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.32 (foreground color: #9e9da0, background color: #eeeeee, font size: 10.5pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  ac) [&quot;a[href$=\&quot;terms-of-use/\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.32 (foreground color: #9e9da0, background color: #eeeeee, font size: 10.5pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  ad) [&quot;.ml-md-10 &gt; ul &gt; li:nth-child(5)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.32 (foreground color: #9e9da0, background color: #eeeeee, font size: 10.5pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  ae) [&quot;#onetrust-accept-btn-handler&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.08 (foreground color: #ffffff, background color: #fd5f07, font size: 9.8pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+3) IDs of active elements must be unique: https://dequeuniversity.com/rules/axe/3.1/duplicate-id-active?application=axeAPI
+  a) [&quot;textarea[name=\&quot;global-your-message-mob\&quot;]&quot;]
+    Fix any of the following:
+      Document has active elements with the same id attribute: message
+
+
+4) id attribute value must be unique: https://dequeuniversity.com/rules/axe/3.1/duplicate-id?application=axeAPI
+  a) [&quot;.above-the-fold &gt; .feature.video.loaded &gt; .video-bg &gt; .video-wrapper&quot;]
+    Fix any of the following:
+      Document has multiple static elements with the same id attribute
+
+
+  b) [&quot;.row:nth-child(3) &gt; .col &gt; .section-contact-footer &gt; .wpcf7-hidden[value=\&quot;\\32 023-1-6\&quot;][name=\&quot;submissiondate\&quot;]&quot;]
+    Fix any of the following:
+      Document has multiple static elements with the same id attribute
+
+
+5) Heading levels should only increase by one: https://dequeuniversity.com/rules/axe/3.1/heading-order?application=axeAPI
+  a) [&quot;.enter-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; h6&quot;]
+    Fix any of the following:
+      Heading order invalid
+
+
+  b) [&quot;#scollJack01 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; h6&quot;]
+    Fix any of the following:
+      Heading order invalid
+
+
+  c) [&quot;#scollJack02 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; h6&quot;]
+    Fix any of the following:
+      Heading order invalid
+
+
+  d) [&quot;#scollJack03 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; h6&quot;]
+    Fix any of the following:
+      Heading order invalid
+
+
+  e) [&quot;#scollJack04 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; h6&quot;]
+    Fix any of the following:
+      Heading order invalid
+
+
+  f) [&quot;.col-md-4.card-home-animate:nth-child(1) &gt; .card-home-03 &gt; .card-home-03-front &gt; .card-header &gt; h6&quot;]
+    Fix any of the following:
+      Heading order invalid
+
+
+  g) [&quot;.d-sm-block &gt; .right-box.footer-block &gt; h6&quot;]
+    Fix any of the following:
+      Heading order invalid
+
+
+6) &lt;html&gt; element must have a lang attribute: https://dequeuniversity.com/rules/axe/3.1/html-has-lang?application=axeAPI
+  a) [&quot;iframe[title=\&quot;LinkedIn\\ auto\\ fill\&quot;]&quot;,&quot;html&quot;]
+    Fix any of the following:
+      The &lt;html&gt; element does not have a lang attribute
+
+
+  b) [&quot;#q-messenger-frame&quot;,&quot;html&quot;]
+    Fix any of the following:
+      The &lt;html&gt; element does not have a lang attribute
+
+
+7) Form elements must have labels: https://dequeuniversity.com/rules/axe/3.1/label?application=axeAPI
+  a) [&quot;textarea[name=\&quot;global-your-message\&quot;]&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+8) Page must not have more than one contentinfo landmark: https://dequeuniversity.com/rules/axe/3.1/landmark-no-duplicate-contentinfo?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      Page has more than one contentinfo landmark
+
+
+9) Links must have discernible text: https://dequeuniversity.com/rules/axe/3.1/link-name?application=axeAPI
+  a) [&quot;.card-home-02--success &gt; .card-link&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  b) [&quot;.card-link[href$=\&quot;insurance/\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  c) [&quot;.card-link[href$=\&quot;healthcare/\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  d) [&quot;.card-link[href$=\&quot;life-sciences/\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  e) [&quot;.card-link[href$=\&quot;industrial/\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  f) [&quot;.card-home-02--maroon &gt; .card-link&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  g) [&quot;.card-link[href$=\&quot;telecom-and-media/\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  h) [&quot;.justify-content-md-end &gt; ul &gt; li:nth-child(1) &gt; a[target=\&quot;_blank\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  i) [&quot;.justify-content-md-end &gt; ul &gt; li:nth-child(2) &gt; a[target=\&quot;_blank\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  j) [&quot;.justify-content-md-end &gt; ul &gt; li:nth-child(3) &gt; a[target=\&quot;_blank\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  k) [&quot;.justify-content-md-end &gt; ul &gt; li:nth-child(4) &gt; a[target=\&quot;_blank\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+10) All page content must be contained by landmarks: https://dequeuniversity.com/rules/axe/3.1/region?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+ expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at application.tests.LoginPageTests.googleAllyTest(LoginPageTests.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace785340693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace785340693'><pre>java.lang.AssertionError: Found 10 accessibility violations:
+1) ARIA role must be appropriate for the element: https://dequeuniversity.com/rules/axe/3.1/aria-allowed-role?application=axeAPI
+  a) [&quot;iframe[title=\&quot;reCAPTCHA\&quot;]&quot;]
+    Fix any of the following:
+      role presentation  is not allowed for given element
+
+
+  b) [&quot;.ot-host-expand&quot;]
+    Fix any of the following:
+      role presentation  is not allowed for given element
+
+
+  c) [&quot;iframe[title=\&quot;reCAPTCHA\&quot;]&quot;,&quot;#recaptcha-anchor-label&quot;]
+    Fix any of the following:
+      role presentation  is not allowed for given element
+
+
+2) Elements must have sufficient color contrast: https://dequeuniversity.com/rules/axe/3.1/color-contrast?application=axeAPI
+  a) [&quot;.enter-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  b) [&quot;.enter-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(2) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  c) [&quot;.enter-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(3) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  d) [&quot;.col-md-9 &gt; h4&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.69 (foreground color: #ffffff, background color: #00adc6, font size: 16.5pt, font weight: bold). Expected contrast ratio of 3:1
+
+
+  e) [&quot;#scollJack01 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  f) [&quot;#scollJack01 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(2) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  g) [&quot;#scollJack01 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(3) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  h) [&quot;#scollJack02 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  i) [&quot;#scollJack02 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(2) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  j) [&quot;#scollJack02 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(3) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  k) [&quot;#scollJack03 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  l) [&quot;#scollJack03 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(2) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  m) [&quot;#scollJack03 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(3) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  n) [&quot;#scollJack04 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  o) [&quot;#scollJack04 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(2) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  p) [&quot;#scollJack04 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(3) &gt; .card-home-01 &gt; p:nth-child(1)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.44 (foreground color: #a7a5a9, background color: #ffffff, font size: 12.0pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  q) [&quot;a[title=\&quot;Banking\\ \\&amp;\\ Financial\\ Services\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.14 (foreground color: #ffffff, background color: #6bbfbc, font size: 15.0pt, font weight: bold). Expected contrast ratio of 3:1
+
+
+  r) [&quot;a[title=\&quot;Insurance\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 1.98 (foreground color: #ffffff, background color: #7ac5c3, font size: 15.0pt, font weight: bold). Expected contrast ratio of 3:1
+
+
+  s) [&quot;a[title=\&quot;Healthcare\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.69 (foreground color: #ffffff, background color: #00adc6, font size: 15.0pt, font weight: bold). Expected contrast ratio of 3:1
+
+
+  t) [&quot;a[title=\&quot;Industrial\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 1.9 (foreground color: #ffffff, background color: #f5ae45, font size: 15.0pt, font weight: bold). Expected contrast ratio of 3:1
+
+
+  u) [&quot;a[title=\&quot;Software\\ \\&amp;Hi-Tech\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.4 (foreground color: #ffffff, background color: #ff8372, font size: 15.0pt, font weight: bold). Expected contrast ratio of 3:1
+
+
+  v) [&quot;a[title=\&quot;Telecom\\ \\&amp;Media\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 1.84 (foreground color: #ffffff, background color: #9ecc7a, font size: 15.0pt, font weight: bold). Expected contrast ratio of 3:1
+
+
+  w) [&quot;#homepage-brand-video&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.82 (foreground color: #ffffff, background color: #ff6d00, font size: 11.3pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  x) [&quot;#menu-item-15321 &gt; a&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.1 (foreground color: #a7a5a9, background color: #eeeeee, font size: 11.3pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  y) [&quot;#menu-item-15320 &gt; a&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.1 (foreground color: #a7a5a9, background color: #eeeeee, font size: 11.3pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  z) [&quot;a[href$=\&quot;sitemap/\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.32 (foreground color: #9e9da0, background color: #eeeeee, font size: 10.5pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  aa) [&quot;#menu-item-9636 &gt; a[href$=\&quot;privacy-notice/\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.32 (foreground color: #9e9da0, background color: #eeeeee, font size: 10.5pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  ab) [&quot;#menu-item-14049 &gt; a[href$=\&quot;cookie-policy/\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.32 (foreground color: #9e9da0, background color: #eeeeee, font size: 10.5pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  ac) [&quot;a[href$=\&quot;terms-of-use/\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.32 (foreground color: #9e9da0, background color: #eeeeee, font size: 10.5pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  ad) [&quot;.ml-md-10 &gt; ul &gt; li:nth-child(5)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 2.32 (foreground color: #9e9da0, background color: #eeeeee, font size: 10.5pt, font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  ae) [&quot;#onetrust-accept-btn-handler&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.08 (foreground color: #ffffff, background color: #fd5f07, font size: 9.8pt, font weight: bold). Expected contrast ratio of 4.5:1
+
+
+3) IDs of active elements must be unique: https://dequeuniversity.com/rules/axe/3.1/duplicate-id-active?application=axeAPI
+  a) [&quot;textarea[name=\&quot;global-your-message-mob\&quot;]&quot;]
+    Fix any of the following:
+      Document has active elements with the same id attribute: message
+
+
+4) id attribute value must be unique: https://dequeuniversity.com/rules/axe/3.1/duplicate-id?application=axeAPI
+  a) [&quot;.above-the-fold &gt; .feature.video.loaded &gt; .video-bg &gt; .video-wrapper&quot;]
+    Fix any of the following:
+      Document has multiple static elements with the same id attribute
+
+
+  b) [&quot;.row:nth-child(3) &gt; .col &gt; .section-contact-footer &gt; .wpcf7-hidden[value=\&quot;\\32 023-1-6\&quot;][name=\&quot;submissiondate\&quot;]&quot;]
+    Fix any of the following:
+      Document has multiple static elements with the same id attribute
+
+
+5) Heading levels should only increase by one: https://dequeuniversity.com/rules/axe/3.1/heading-order?application=axeAPI
+  a) [&quot;.enter-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; h6&quot;]
+    Fix any of the following:
+      Heading order invalid
+
+
+  b) [&quot;#scollJack01 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; h6&quot;]
+    Fix any of the following:
+      Heading order invalid
+
+
+  c) [&quot;#scollJack02 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; h6&quot;]
+    Fix any of the following:
+      Heading order invalid
+
+
+  d) [&quot;#scollJack03 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; h6&quot;]
+    Fix any of the following:
+      Heading order invalid
+
+
+  e) [&quot;#scollJack04 &gt; .hero-content.css-animate &gt; .container &gt; .negative-margin.justify-content-center.row &gt; .col-lg-10.scrollable-wrap &gt; .scrollable-list &gt; li:nth-child(1) &gt; .card-home-01 &gt; h6&quot;]
+    Fix any of the following:
+      Heading order invalid
+
+
+  f) [&quot;.col-md-4.card-home-animate:nth-child(1) &gt; .card-home-03 &gt; .card-home-03-front &gt; .card-header &gt; h6&quot;]
+    Fix any of the following:
+      Heading order invalid
+
+
+  g) [&quot;.d-sm-block &gt; .right-box.footer-block &gt; h6&quot;]
+    Fix any of the following:
+      Heading order invalid
+
+
+6) &lt;html&gt; element must have a lang attribute: https://dequeuniversity.com/rules/axe/3.1/html-has-lang?application=axeAPI
+  a) [&quot;iframe[title=\&quot;LinkedIn\\ auto\\ fill\&quot;]&quot;,&quot;html&quot;]
+    Fix any of the following:
+      The &lt;html&gt; element does not have a lang attribute
+
+
+  b) [&quot;#q-messenger-frame&quot;,&quot;html&quot;]
+    Fix any of the following:
+      The &lt;html&gt; element does not have a lang attribute
+
+
+7) Form elements must have labels: https://dequeuniversity.com/rules/axe/3.1/label?application=axeAPI
+  a) [&quot;textarea[name=\&quot;global-your-message\&quot;]&quot;]
+    Fix any of the following:
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Form element does not have an implicit (wrapped) &lt;label&gt;
+      Form element does not have an explicit &lt;label&gt;
+      Element has no title attribute or the title attribute is empty
+
+
+8) Page must not have more than one contentinfo landmark: https://dequeuniversity.com/rules/axe/3.1/landmark-no-duplicate-contentinfo?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      Page has more than one contentinfo landmark
+
+
+9) Links must have discernible text: https://dequeuniversity.com/rules/axe/3.1/link-name?application=axeAPI
+  a) [&quot;.card-home-02--success &gt; .card-link&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  b) [&quot;.card-link[href$=\&quot;insurance/\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  c) [&quot;.card-link[href$=\&quot;healthcare/\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  d) [&quot;.card-link[href$=\&quot;life-sciences/\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  e) [&quot;.card-link[href$=\&quot;industrial/\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  f) [&quot;.card-home-02--maroon &gt; .card-link&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  g) [&quot;.card-link[href$=\&quot;telecom-and-media/\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  h) [&quot;.justify-content-md-end &gt; ul &gt; li:nth-child(1) &gt; a[target=\&quot;_blank\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  i) [&quot;.justify-content-md-end &gt; ul &gt; li:nth-child(2) &gt; a[target=\&quot;_blank\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  j) [&quot;.justify-content-md-end &gt; ul &gt; li:nth-child(3) &gt; a[target=\&quot;_blank\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+  k) [&quot;.justify-content-md-end &gt; ul &gt; li:nth-child(4) &gt; a[target=\&quot;_blank\&quot;]&quot;]
+    Fix all of the following:
+      Element is in tab order and does not have accessible text
+
+    Fix any of the following:
+      Element does not have text that is visible to screen readers
+      aria-label attribute does not exist or is empty
+      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
+      Element&apos;s default semantics were not overridden with role=&quot;presentation&quot;
+      Element&apos;s default semantics were not overridden with role=&quot;none&quot;
+
+
+10) All page content must be contained by landmarks: https://dequeuniversity.com/rules/axe/3.1/region?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+ expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at application.tests.LoginPageTests.googleAllyTest(LoginPageTests.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>345</td>
+<td>application.tests.LoginPageTests@2a65fe7c</td></tr>
+</table><p>
+</body>
+</html>

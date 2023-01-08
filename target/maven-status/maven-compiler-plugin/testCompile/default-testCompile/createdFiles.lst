@@ -1,0 +1,8 @@
+application\tests\CheckoutPageTests.class
+application\tests\HomePageTests.class
+application\apitests\GetAPITests.class
+application\tests\BaseTest.class
+application\tests\PaymentPageTests.class
+application\tests\Employee.class
+application\tests\JSONTest.class
+application\tests\LoginPageTests.class

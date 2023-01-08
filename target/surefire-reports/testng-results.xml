@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[PageTtile is: Facebook – log in or sign up]]>
+    </line>
+    <line>
+      <![CDATA[Taking Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[Test for: satpal 123]]>
+    </line>
+    <line>
+      <![CDATA[Taking Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[Test for: jangir 456]]>
+    </line>
+    <line>
+      <![CDATA[Taking Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[Test for: hello 789]]>
+    </line>
+    <line>
+      <![CDATA[Taking Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[Smoke and Regeression Test]]>
+    </line>
+    <line>
+      <![CDATA[Taking Screenshot]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-01-09T00:04:35 IST" name="Parallel Test runs." finished-at="2023-01-09T00:05:24 IST" duration-ms="48651">
+    <groups>
+      <group name="Regression">
+        <method signature="LoginPageTests.loginToFacebook(java.lang.String,java.lang.String)[pri:0, instance:application.tests.LoginPageTests@481a996b]" name="loginToFacebook" class="application.tests.LoginPageTests"/>
+        <method signature="LoginPageTests.verifyFbLoginPageTitle(java.lang.String)[pri:0, instance:application.tests.LoginPageTests@481a996b]" name="verifyFbLoginPageTitle" class="application.tests.LoginPageTests"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="LoginPageTests.facebookLoginPage()[pri:0, instance:application.tests.LoginPageTests@481a996b]" name="facebookLoginPage" class="application.tests.LoginPageTests"/>
+        <method signature="LoginPageTests.verifyFbLoginPageTitle(java.lang.String)[pri:0, instance:application.tests.LoginPageTests@481a996b]" name="verifyFbLoginPageTitle" class="application.tests.LoginPageTests"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2023-01-09T00:04:35 IST" name="Regression One" finished-at="2023-01-09T00:05:24 IST" duration-ms="48651">
+      <class name="application.tests.LoginPageTests">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:application.tests.LoginPageTests@481a996b]" started-at="2023-01-09T00:04:36 IST" name="launchBrowser" finished-at="2023-01-09T00:04:49 IST" duration-ms="13724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="facebookLoginPage()[pri:0, instance:application.tests.LoginPageTests@481a996b]" started-at="2023-01-09T00:04:49 IST" name="facebookLoginPage" finished-at="2023-01-09T00:04:49 IST" duration-ms="245" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[PageTtile is: Facebook – log in or sign up]]>
+            </line>
+            <line>
+              <![CDATA[Taking Screenshot]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- facebookLoginPage -->
+        <test-method is-config="true" signature="tearDownBrowser()[pri:0, instance:application.tests.LoginPageTests@481a996b]" started-at="2023-01-09T00:04:49 IST" name="tearDownBrowser" finished-at="2023-01-09T00:04:51 IST" duration-ms="1405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:application.tests.LoginPageTests@481a996b]" started-at="2023-01-09T00:04:51 IST" name="launchBrowser" finished-at="2023-01-09T00:04:57 IST" duration-ms="6513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="loginToFacebook(java.lang.String,java.lang.String)[pri:0, instance:application.tests.LoginPageTests@481a996b]" started-at="2023-01-09T00:04:57 IST" name="loginToFacebook" data-provider="UserData" finished-at="2023-01-09T00:04:58 IST" duration-ms="503" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[satpal]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test for: satpal 123]]>
+            </line>
+            <line>
+              <![CDATA[Taking Screenshot]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToFacebook -->
+        <test-method is-config="true" signature="tearDownBrowser()[pri:0, instance:application.tests.LoginPageTests@481a996b]" started-at="2023-01-09T00:04:58 IST" name="tearDownBrowser" finished-at="2023-01-09T00:04:59 IST" duration-ms="1174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:application.tests.LoginPageTests@481a996b]" started-at="2023-01-09T00:04:59 IST" name="launchBrowser" finished-at="2023-01-09T00:05:05 IST" duration-ms="6381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="loginToFacebook(java.lang.String,java.lang.String)[pri:0, instance:application.tests.LoginPageTests@481a996b]" started-at="2023-01-09T00:05:05 IST" name="loginToFacebook" data-provider="UserData" finished-at="2023-01-09T00:05:06 IST" duration-ms="435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jangir]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test for: jangir 456]]>
+            </line>
+            <line>
+              <![CDATA[Taking Screenshot]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToFacebook -->
+        <test-method is-config="true" signature="tearDownBrowser()[pri:0, instance:application.tests.LoginPageTests@481a996b]" started-at="2023-01-09T00:05:06 IST" name="tearDownBrowser" finished-at="2023-01-09T00:05:07 IST" duration-ms="1121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:application.tests.LoginPageTests@481a996b]" started-at="2023-01-09T00:05:07 IST" name="launchBrowser" finished-at="2023-01-09T00:05:14 IST" duration-ms="6685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="loginToFacebook(java.lang.String,java.lang.String)[pri:0, instance:application.tests.LoginPageTests@481a996b]" started-at="2023-01-09T00:05:14 IST" name="loginToFacebook" data-provider="UserData" finished-at="2023-01-09T00:05:14 IST" duration-ms="439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hello]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test for: hello 789]]>
+            </line>
+            <line>
+              <![CDATA[Taking Screenshot]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToFacebook -->
+        <test-method is-config="true" signature="tearDownBrowser()[pri:0, instance:application.tests.LoginPageTests@481a996b]" started-at="2023-01-09T00:05:14 IST" name="tearDownBrowser" finished-at="2023-01-09T00:05:15 IST" duration-ms="1210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:application.tests.LoginPageTests@481a996b]" started-at="2023-01-09T00:05:15 IST" name="launchBrowser" finished-at="2023-01-09T00:05:22 IST" duration-ms="6825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyFbLoginPageTitle(java.lang.String)[pri:0, instance:application.tests.LoginPageTests@481a996b]" started-at="2023-01-09T00:05:22 IST" name="verifyFbLoginPageTitle" finished-at="2023-01-09T00:05:22 IST" duration-ms="227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Facebook – log in or sign up]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Smoke and Regeression Test]]>
+            </line>
+            <line>
+              <![CDATA[Taking Screenshot]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyFbLoginPageTitle -->
+        <test-method is-config="true" signature="tearDownBrowser()[pri:0, instance:application.tests.LoginPageTests@481a996b]" started-at="2023-01-09T00:05:22 IST" name="tearDownBrowser" finished-at="2023-01-09T00:05:24 IST" duration-ms="1233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+      </class> <!-- application.tests.LoginPageTests -->
+      <class name="application.apitests.GetAPITests">
+        <test-method signature="testGetApi()[pri:0, instance:application.apitests.GetAPITests@123ef382]" started-at="2023-01-09T00:05:24 IST" name="testGetApi" finished-at="2023-01-09T00:05:24 IST" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetApi -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:application.apitests.GetAPITests@123ef382]" started-at="2023-01-09T00:05:24 IST" name="setUp" finished-at="2023-01-09T00:05:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:application.apitests.GetAPITests@123ef382]" started-at="2023-01-09T00:05:24 IST" name="tearDown" finished-at="2023-01-09T00:05:24 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- application.apitests.GetAPITests -->
+    </test> <!-- Regression One -->
+  </suite> <!-- Parallel Test runs. -->
+</testng-results>
